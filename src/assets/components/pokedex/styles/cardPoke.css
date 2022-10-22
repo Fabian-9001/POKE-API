@@ -1,0 +1,555 @@
+.container__pokemons {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    margin: 150px 0;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.pokemon {
+    width: 100%;
+    max-width: 300px;
+    height: 100%;
+}
+
+/*--POKEBALL--*/
+.container__pokeball {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto;
+}
+
+.pokeball {
+    position: relative;
+    z-index: 3;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+    /* animation: anim-name 2s infinite;*/
+}
+
+@keyframes anim-name {
+    0% {
+        transform: translate(0, 0) rotate(0)
+    }
+
+    25% {
+        transform: translate(-8px, 0) rotate(-18deg)
+    }
+
+    33% {
+        transform: translate(8px, 0) rotate(18deg)
+    }
+
+    50% {
+        transform: translate(-8px, 0) rotate(-12deg)
+    }
+
+    60% {
+        transform: translate(8px, 0) rotate(18deg)
+    }
+
+    100% {
+        transform: translate(0, 0) rotate(0)
+    }
+}
+
+.container__pokeball:hover .pokeball {
+    transform: scale(0.8) translateY(10%) translateX(-50%);
+    opacity: 0;
+}
+
+.pokeball__top {
+    transition: 0.5s;
+}
+
+.container__pokeball:hover .pokeball__top {
+    transform: translateY(-24%) translateX(-20%) rotate(-30deg);
+    transition: 0.5s;
+}
+
+.pokeball__img1 {
+    position: relative;
+    transform: translateY(32%) translateX(-4%);
+    width: 142%;
+}
+
+.pokeball__med {
+    position: relative;
+    width: 100%;
+    transform: translateX(10%);
+}
+
+.pokeball__circle {
+    width: 15%;
+    height: 40%;
+    border-radius: 50%;
+    border: none;
+    background-color: white;
+    position: absolute;
+    z-index: 2;
+    left: 50%;
+    top: 46%;
+    transform: translateX(-50%) translateY(-46%);
+    animation: pokeball-circle 0.5s linear infinite alternate;
+}
+
+.pokeball__img3 {
+    position: relative;
+    transform: translateY(-24%) translateX(1%);
+    width: 120%;
+
+}
+
+.disable__Pokeball {
+    display: none;
+}
+
+@keyframes pokeball-circle {
+    from {
+        background-color: red;
+        box-shadow: 0 0 20px 1px red, 0 0 50px 25px rgb(223, 144, 144);
+    }
+
+    to {}
+}
+
+/*--CARD--*/
+.pokeball__card {
+    position: absolute;
+    z-index: 3;
+    transform: scale(0.1);
+    opacity: 0;
+    transition: 0.5s;
+    width: 370px;
+    height: 665px;
+    font-family: cursive;
+    background-position: center;
+    background-size: 100% 100%;
+    margin-left: 40px;
+}
+
+.container__pokeball:hover .pokeball__card {
+    opacity: 1;
+    transition: 0.5s;
+    transform: scale(0.8);
+}
+
+.show__card {
+    position: relative;
+    z-index: 3;
+    transform: scale(0.8);
+    opacity: 1;
+    transition: 0.5s;
+    width: 370px;
+    height: 665px;
+    font-family: cursive;
+    background-position: center;
+    background-size: 100% 100%;
+}
+
+.card__header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+}
+
+.card__img {
+    position: relative;
+    z-index: 3;
+    width: 450px;
+    height: 350px;
+    transition: 0.5s;
+}
+
+.card__img:hover {
+    scale: 1.1;
+    filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.538));
+    transition: 0.5s;
+}
+
+.card__description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    margin-bottom: 10px;
+}
+
+.card__types {
+    display: flex;
+    gap: 20px;
+    font-size: 1.2rem;
+    color: #000000;
+}
+
+.card__name {
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #000000;
+}
+
+.card__container__info {
+    background-color: rgba(15, 10, 10, 0);
+    backdrop-filter: blur(5px);
+    width: 92%;
+    height: 31.9%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.card__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+    gap: 55px;
+    column-gap: 5px;
+    row-gap: 30px;
+}
+
+.card__statText {
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #000000;
+}
+
+.card__statNumber {
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.card__stat {
+    background-color: rgba(255, 255, 255, 0.653);
+    padding: 5px;
+    border-radius: 50px;
+}
+
+.card__stat:nth-child(1) {
+    position: absolute;
+    left: 10px;
+    bottom: 5px;
+}
+
+.card__stat:nth-child(2) {
+    position: absolute;
+    right: 10px;
+    top: 80px;
+}
+
+.card__stat:nth-child(3) {
+    position: absolute;
+    left: 10px;
+    bottom: 94px;
+}
+
+.card__stat:nth-child(4) {
+    position: absolute;
+    right: 10px;
+    bottom: 50px;
+    width: auto;
+}
+
+.card__stat:nth-child(5) {
+    position: absolute;
+    bottom: 5px;
+    right: 10px;
+    width: auto;
+}
+
+.card__stat:nth-child(6) {
+    position: absolute;
+    left: 10px;
+    bottom: 50px;
+}
+
+/*--TEMPLEATE CARD--*/
+.templeate-normal {
+    background-image: url(img/templeate-basic.png)
+}
+
+.templeate-water {
+    background-image: url(img/templeate-water.png);
+
+}
+
+.templeate-fighting {
+    background-image: url(img/templeate-fighting.png);
+
+}
+
+.templeate-dark {
+    background-image: url(img/templeate-dark.png);
+}
+
+.templeate-grass {
+    background-image: url(img/templeate-grass.png)
+}
+
+.templeate-fire {
+    background-image: url(img/templeate-fire.png);
+}
+
+.templeate-electric {
+    background-image: url(img/templeate-electric.png);
+}
+
+.templeate-psychic {
+    background-image: url(img/templeate-psychic.png)
+}
+
+.templeate-fairy {
+    background-image: url(img/templeate-fairy.png);
+}
+
+.templeate-steel {
+    background-image: url(img/templeate-steel.png)
+}
+
+.templeate-poison {
+    background-image: url(img/templeate-poison.png)
+}
+
+.templeate-ice {
+    background-image: url(img/templeate-ice.png);
+}
+
+.templeate-dragon {
+    background-image: url(img/templeate-dragon.png)
+}
+
+.templeate-flying {
+    background-image: url(img/templeate-flying.png)
+}
+
+.templeate-bug {
+    background-image: url(img/templeate-bug.png)
+}
+
+.templeate-flying {
+    background-image: url(img/templeate-flying.png)
+}
+
+.templeate-ground {
+    background-image: url(img/templeate-ground.png)
+}
+
+.templeate-rock {
+    background-image: url(img/templeate-rock.png)
+}
+
+.templeate-ghost {
+    background-image: url(img/templeate-ghost.png)
+}
+
+/*--BACKGROUND CARD--*/
+.card__background__img {
+    width: 82.2%;
+    height: 39%;
+    position: absolute;
+    z-index: 2;
+    top: 17%;
+    left: 51%;
+    transform: translateY(-17%) translateX(-51%);
+}
+
+.background-normal {
+    background-image: radial-gradient(circle, #bcbdca, #a9afb8, #99a1a6, #8c9294, #818383);
+}
+
+.background-water {
+    background-image: radial-gradient(circle, #bcbdca, #a3aec6, #83a1c1, #5a95b9, #0b8aae);
+}
+
+.background-fighting {
+    background-image: radial-gradient(circle, #f5daae, #efc486, #e9ac61, #e3943b, #dd7a10);
+}
+
+.background-dark {
+    background-image: radial-gradient(circle, #7a7979, #666565, #525252, #404040, #2e2e2e);
+}
+
+.background-grass {
+    background-image: radial-gradient(circle, #a3eaa2, #84d27f, #64bb5c, #44a339, #1a8c09);
+}
+
+.background-fire {
+    background-image: radial-gradient(circle, #f5bec8, #ef9ca4, #e57b7c, #d65b51, #c13d22);
+}
+
+.background-electric {
+    background-image: radial-gradient(circle, #e1e6a8, #dbe089, #d5da69, #cfd444, #c9cd00);
+}
+
+.background-psychic {
+    background-image: radial-gradient(circle, #e4b8ec, #d699dc, #c97acc, #bc58ba, #af30a7);
+}
+
+.background-fairy {
+    background-image: radial-gradient(circle, #e4b8ec, #e39cea, #e37de6, #e359e0, #e41ad7);
+}
+
+.background-steel {
+    background-image: radial-gradient(circle, #ffffff, #e1e1e1, #c3c3c3, #a7a7a7, #8b8b8b);
+}
+
+.background-poison {
+    background-image: radial-gradient(circle, #bba1c6, #a389b0, #8c719a, #745a85, #5e4470);
+}
+
+.background-ice {
+    background-image: radial-gradient(circle, #aceff2, #8ad4dd, #6ab9ca, #489eb6, #2384a3);
+}
+
+.background-dragon {
+    background-image: radial-gradient(circle, #f2ebac, #dad186, #c3b760, #ab9e3a, #948606);
+}
+
+.background-ground {
+    background-image: radial-gradient(circle, #d7c7b9, #c7af9a, #b7977c, #a67f5f, #956843);
+}
+
+.background-rock {
+    background-image: radial-gradient(circle, #e2dcd7, #cac3be, #b2aba5, #9b938d, #847c76);
+}
+
+.background-bug {
+    background-image: radial-gradient(circle, #cee7b1, #b0ca98, #94ad7f, #789167, #5e7650);
+}
+
+.background-ghost {
+    background-image: radial-gradient(circle, #dfc0d2, #c6a6bc, #ac8da6, #937591, #7a5e7d);
+}
+
+
+/*--PAGINATION--*/
+.container__pagination {
+    width: 50%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pagination__list {
+    display: flex;
+}
+
+.pagination__page {
+    color: white;
+    font-family: cursive;
+    padding: 0px 8px;
+    font-size: 1.2rem;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.pagination__prev,
+.pagination__next {
+    padding: 3px 10px;
+    font-size: 1.5rem;
+    border-radius: 25px;
+    font-weight: 900;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.pagination__active:hover {
+    scale: 1.1;
+    transition: 0.5s;
+}
+
+.pagination__active {
+    color: gray;
+    background-color: rgb(255, 255, 255);
+    box-shadow: inset 7px 7px 10px 1px rgba(111, 110, 110, 0.626);
+    border: 2px outset rgb(249, 249, 249);
+}
+
+
+/*--ASIDE--*/
+.aside {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.aside input {
+    padding: 10px 30px;
+    border-radius: 30px;
+    border: none;
+    text-align: center;
+    font-size: 1rem;
+    color: gray;
+    background-color: rgb(255, 255, 255);
+    box-shadow: inset 7px 7px 10px 1px rgba(111, 110, 110, 0.626);
+    border: 2px outset rgb(249, 249, 249);
+    transition: 0.5s;
+    width: 40%;
+    margin: 0 3%;
+}
+
+.aside button {
+    padding: 10px 30px;
+    border-radius: 30px;
+    border: none;
+    text-align: center;
+    font-size: 1rem;
+    color: gray;
+    background-color: rgb(0, 0, 0);
+    box-shadow:  0px 0px 10px 1px rgba(255, 255, 255, 0.626);
+    border: 2px outset rgb(249, 249, 249);
+    transition: 0.5s;
+}
+
+.aside button:hover {
+    background-color:rgb(249, 249, 249);
+    box-shadow:  0px 0px 10px 1px rgba(255, 255, 255, 0.626);
+    transition: 0.5s;
+}
+
+.aside select {
+    background: white;
+}
+
+.aside select option {
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 10px;
+}
+
+.aside select option:hover {
+    transform: scale(2);
+}
+
+.change__pokeball__btn {
+    padding: 10px 30px;
+    border-radius: 25px;
+    position: absolute;
+    top: 40%;
+    left: 0%;
+   
+}
