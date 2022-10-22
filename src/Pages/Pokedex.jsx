@@ -65,7 +65,7 @@ const Pokedex = () => {
         }
       </main>
 
-      {/*} <Pagination setpage={setpage} page={page} pagesLength={pokemons && Math.ceil(pokemons.length / pokePerPage)} />{*/}
+       <Pagination setpage={setpage} page={page} pagesLength={pokemons && Math.ceil(pokemons.length / pokePerPage)} />
 
     </div>
   )
