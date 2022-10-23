@@ -284,81 +284,81 @@
 
 /*--TEMPLEATE CARD--*/
 .templeate-normal {
-    background-image: url(img/templeate-basic.png)
+    background-image: url(./img/templeate-basic.png)
 }
 
 .templeate-water {
-    background-image: url(img/templeate-water.png);
+    background-image: url(./img/templeate-water.png);
 
 }
 
 .templeate-fighting {
-    background-image: url(img/templeate-fighting.png);
+    background-image: url(./img/templeate-fighting.png);
 
 }
 
 .templeate-dark {
-    background-image: url(img/templeate-dark.png);
+    background-image: url(./img/templeate-dark.png);
 }
 
 .templeate-grass {
-    background-image: url(img/templeate-grass.png)
+    background-image: url(./img/templeate-grass.png)
 }
 
 .templeate-fire {
-    background-image: url(img/templeate-fire.png);
+    background-image: url(./img/templeate-fire.png);
 }
 
 .templeate-electric {
-    background-image: url(img/templeate-electric.png);
+    background-image: url(./img/templeate-electric.png);
 }
 
 .templeate-psychic {
-    background-image: url(img/templeate-psychic.png)
+    background-image: url(./img/templeate-psychic.png)
 }
 
 .templeate-fairy {
-    background-image: url(img/templeate-fairy.png);
+    background-image: url(./img/templeate-fairy.png);
 }
 
 .templeate-steel {
-    background-image: url(img/templeate-steel.png)
+    background-image: url(./img/templeate-steel.png)
 }
 
 .templeate-poison {
-    background-image: url(img/templeate-poison.png)
+    background-image: url(./img/templeate-poison.png)
 }
 
 .templeate-ice {
-    background-image: url(img/templeate-ice.png);
+    background-image: url(./img/templeate-ice.png);
 }
 
 .templeate-dragon {
-    background-image: url(img/templeate-dragon.png)
+    background-image: url(./img/templeate-dragon.png)
 }
 
 .templeate-flying {
-    background-image: url(img/templeate-flying.png)
+    background-image: url(./img/templeate-flying.png)
 }
 
 .templeate-bug {
-    background-image: url(img/templeate-bug.png)
+    background-image: url(./img/templeate-bug.png)
 }
 
 .templeate-flying {
-    background-image: url(img/templeate-flying.png)
+    background-image: url(./img/templeate-flying.png)
 }
 
 .templeate-ground {
-    background-image: url(img/templeate-ground.png)
+    background-image: url(./img/templeate-ground.png)
 }
 
 .templeate-rock {
-    background-image: url(img/templeate-rock.png)
+    background-image: url(./img/templeate-rock.png)
 }
 
 .templeate-ghost {
-    background-image: url(img/templeate-ghost.png)
+    background-image: url(./img/templeate-ghost.png)
 }
 
 /*--BACKGROUND CARD--*/
@@ -467,7 +467,6 @@
     font-size: 1.5rem;
     transition: 0.5s;
     cursor: pointer;
-    border-radius: 50px;
 }
 
 .pagination__prev,
@@ -487,9 +486,15 @@
 
 .pagination__active {
     color: rgb(128, 127, 127);
-    background-color: rgb(255, 255, 255);
-    box-shadow: inset 7px 7px 10px 1px rgba(111, 110, 110, 0.626);
-  
+    background-color: rgba(255, 255, 255, 0);
+    box-shadow: 0px 0px 3px 1px rgba(255, 255, 255, 0.626);
+    border: 7px double rgb(180, 180, 180);
+
+}
+
+.pagination__footer {
+    margin-top: 50px;
+
 }
 
 
@@ -537,7 +542,7 @@
     width: 100%;
     padding: 10px;
     border: none;
-    border-radius:10px;
+    border-radius: 10px;
     background: rgb(255, 255, 255);
     color: #000000;
     appearance: none;
@@ -561,7 +566,7 @@
     position: absolute;
     z-index: 0;
     border-radius: 0px 0px 0px 0px;
-    top: 35%;
+    top: 40%;
     left: 50%;
     transition: 0.5s;
     transform: translateX(-50%);
@@ -575,18 +580,19 @@
 .change__pokeball__btn:hover {
     border-radius: 10px 0px 10px 0px;
     transition: 0.5s;
-    top: 34%;
+    top: 39%;
 }
 
 
 /*--FOOTER--*/
 .footer {
-    background-color: black;
+    background-color: #0b8bae00;
     color: aliceblue;
     width: 100%;
     height: 120px;
-    border-top: 2px solid rgb(200, 59, 59);
+    border-top: 2px solid #e84c4c;
     position: relative;
+    box-shadow: 0px 0 10px 1px rgba(253, 27, 27, 0.4), 0 0 9px 3px rgba(253, 27, 27, 0.1);
 }
 
 .footer__circle {
@@ -595,37 +601,129 @@
     width: 100px;
     border-radius: 50%;
     position: absolute;
-    top:-50px;
+    top: -50px;
     left: 50px;
-    border: 2px solid rgb(187, 54, 54);
+    border: 2px solid #e84c4c;
+    box-shadow: inset 0px 0 10px 5px rgba(253, 27, 27, 0.4), 0 0 9px 3px rgba(253, 27, 27, 0.1);
 }
+
+
+/*--POKEDEX--*/
+.pokedex {
+    width: 400px;
+    height: 500px;
+    border-radius: 20px;
+    background-color: lightblue;
+    position: relative;
+    overflow: hidden;
+}
+
+.pokedex__top {
+    width: 100%;
+    height: 20%;
+    background-color: rgb(185, 33, 33);
+    position: absolute;
+    overflow: hidden;
+}
+
+.pokedex__down {
+    width: 100%;
+    height: 20%;
+    background-color: rgb(185, 33, 33);
+    position: absolute;
+    bottom: 0;
+    overflow: hidden;
+}
+
+.pokedex__top__circle1 {
+    width: 48%;
+    height: 150px;
+    background-color: black;
+    border-radius: 50%;
+    border: 10px double white;
+    position: absolute;
+    left: 50%;
+    top: 25%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.pokedex__top__circle2 {
+    width: 80%;
+    height: 150px;
+    background-color: lightblue;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    top: 13%;
+    transform: translateX(-50%);
+    z-index: 2;
+}
+
+.pokedex__down__circle1 {
+    width: 48%;
+    height: 150px;
+    background-color: black;
+    border-radius: 50%;
+    border: 10px double white;
+    position: absolute;
+    left: 50%;
+    bottom: 25%;
+    transform: translateX(-50%);
+
+}
+
+.pokedex__down__circle2 {
+    width: 80%;
+    height: 150px;
+    background-color: lightblue;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    bottom: 13%;
+    transform: translateX(-50%);
+    z-index: 2;
+}
+
+.pokedex__center__square {
+    width: 80%;
+    height: 270px;
+    margin: 0 auto;
+    position: absolute;
+    background-color: rgb(110, 186, 219);
+    bottom: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 50% 100%, 24% 76%, 0% 75%);
+}
+
 
 
 @media (min-width:400px) {
-    
-.pagination__page {
-    font-size: 1.7rem;
-    transition: 0.5s;
-}
 
-.pagination__prev,
-.pagination__next {
-    padding: 1px 13px;
-    font-size: 1.8rem;
-    border-radius: 25px;
-    transition: 0.5s;
-}
+    .pagination__page {
+        font-size: 1.7rem;
+        transition: 0.5s;
+    }
+
+    .pagination__prev,
+    .pagination__next {
+        padding: 1px 13px;
+        font-size: 1.8rem;
+        border-radius: 25px;
+        transition: 0.5s;
+    }
 
 }
 
 @media (min-width:560px) {
-    
+
     .pagination__page {
         font-size: 2rem;
         transition: 0.5s;
         margin: 0 10px;
     }
-    
+
     .pagination__prev,
     .pagination__next {
         padding: 1px 15px;
@@ -633,6 +731,5 @@
         border-radius: 25px;
         transition: 0.5s;
     }
-    
-    }
 
+}

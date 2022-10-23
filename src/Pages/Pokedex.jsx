@@ -44,8 +44,30 @@ const Pokedex = () => {
       </header>
 
       <aside className='aside'>
-        <InputsSearch />
-        <SelecByType setTypeSelected={setTypeSelected} setpage={setpage} />
+
+        <div className='pokedex'>
+
+          <div className='pokedex__top'>
+            <div className='pokedex__top__circle1'>
+              <div className='pokedex__top__circle2'></div>
+            </div>
+          </div>
+
+          <div className='pokedex__center'>
+            <div className='pokedex__center__square'>
+              <InputsSearch />
+              <SelecByType setTypeSelected={setTypeSelected} setpage={setpage} />
+            </div>
+          </div>
+
+          <div className='pokedex__down'>
+            <div className='pokedex__down__circle1'>
+              <div className='pokedex__down__circle2'></div>
+            </div>
+          </div>
+
+        </div>
+
         <div className='container__pagination'>
           <Pagination setpage={setpage} page={page} pagesLength={pokemons && Math.ceil(pokemons.length / pokePerPage)} />
         </div>
