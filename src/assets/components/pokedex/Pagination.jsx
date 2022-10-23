@@ -34,8 +34,6 @@ const Pagination = ({ page, pagesLength, setpage }) => {
                 page > 1 &&
                 <div className='pagination__prev pagination__active' onClick={handlePreviousPage}>&#60;</div>
             }
-
-
             <div>...</div>
             <ul className='pagination__list'>
                 {arrPages.map(e => (

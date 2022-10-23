@@ -88,6 +88,7 @@ const CardPoke = ({ url, disablePokeball }) => {
                     </header>
 
                     <div className='card__container__info'>
+                        
                         <section className='card__description'>
                             <h3 className='card__name'>{cardPokemon?.name}</h3>
 
@@ -100,7 +101,6 @@ const CardPoke = ({ url, disablePokeball }) => {
 
                                 }
                             </ul>
-
                         </section>
 
                         <section className='card__stats'>
@@ -115,8 +115,8 @@ const CardPoke = ({ url, disablePokeball }) => {
                                 }
                             </ul>
                         </section>
+                    
                     </div>
-
 
                 </div>
 

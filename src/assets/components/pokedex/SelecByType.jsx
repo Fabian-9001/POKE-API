@@ -17,7 +17,7 @@ const SelecByType = ({ setTypeSelected, setpage }) => {
         setpage(1)
     }
 
-    return (
+    return (<div>
         <select onChange={handleChange}>
             <option value="All Pokemons">All Pokemons</option>
             {
@@ -26,6 +26,8 @@ const SelecByType = ({ setTypeSelected, setpage }) => {
                 ))
             }
         </select>
+    </div>
+
     )
 }
 

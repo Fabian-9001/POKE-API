@@ -5,8 +5,11 @@ const Pokemon404 = () => {
 
   return (
     <section className='error__container'>
+      
       <h2 className='error__title'>Pokemon Not Found</h2>
+     
       <div className='container__error__title'>
+        
         <p className='error__number error__number1'>4</p>
         <div className='container__error__pokeball animate__animated animate__bounce'>
 
@@ -26,8 +29,11 @@ const Pokemon404 = () => {
 
         </div>
         <p className='error__number error__number2'>4</p>
+     
       </div>
+      
       <Link className='error__link' to='/pokedex'>Return TO Pokedex</Link>
+    
     </section>
   )
 }

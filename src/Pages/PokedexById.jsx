@@ -124,9 +124,7 @@ const PokedexById = () => {
                     <li className='move__pokemonId'>{move.move.name}</li>
                   ))
                 }
-                <button>
-                  <img onClick={() => setModalMoves(true)} className='exit__btn__pokemonId' src="img/exit icon.png" alt="" />
-                </button>
+                  <img onClick={() => setModalMoves(true)} className='exit__btn__pokemonId' src="img/exit icon.png" alt="" />             
               </ul>
 
             </section>
@@ -147,6 +145,7 @@ const PokedexById = () => {
         </div>
 
       </article>
+    
     </section>
   )
 }

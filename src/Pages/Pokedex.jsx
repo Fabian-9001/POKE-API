@@ -54,6 +54,7 @@ const Pokedex = () => {
       <button onClick={() => setDisablePokeball(!disablePokeball)} className='change__pokeball__btn'>{`${disablePokeball ? 'Show Pokeball' : 'Show Cart'}`}</button>
 
       <main className='container__pokemons'>
+
         {
           pokemons?.slice(initialPoke, finalPoke).map(pokemon => (
             <CardPoke
@@ -63,10 +64,16 @@ const Pokedex = () => {
             />
           ))
         }
+
+        <div className='pagination__footer'>
+          <Pagination setpage={setpage} page={page} pagesLength={pokemons && Math.ceil(pokemons.length / pokePerPage)} />
+        </div>
+
       </main>
 
-      {/*}  <Pagination setpage={setpage} page={page} pagesLength={pokemons && Math.ceil(pokemons.length / pokePerPage)} />{*/}
-
+      <div className='footer'>
+        <div className='footer__circle'></div>
+      </div>
     </div>
   )
 }
