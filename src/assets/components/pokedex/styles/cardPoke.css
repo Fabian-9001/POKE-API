@@ -284,21 +284,21 @@
 
 /*--TEMPLEATE CARD--*/
 .templeate-normal {
-    background-image: url(./img/templeate-basic.png)
+    background-image: url(./public/img/templeate-basic.png)
 }
 
 .templeate-water {
-    background-image: url(./img/templeate-water.png);
+    background-image: url(./public/img/templeate-water.png);
 
 }
 
 .templeate-fighting {
-    background-image: url(./img/templeate-fighting.png);
+    background-image: url(./public/img/templeate-fighting.png);
 
 }
 
 .templeate-dark {
-    background-image: url(./img/templeate-dark.png);
+    background-image: url(./public/img/templeate-dark.png);
 }
 
 .templeate-grass {
@@ -306,59 +306,59 @@
 }
 
 .templeate-fire {
-    background-image: url(./img/templeate-fire.png);
+    background-image: url(./public/img/templeate-fire.png);
 }
 
 .templeate-electric {
-    background-image: url(./img/templeate-electric.png);
+    background-image: url(./public/img/templeate-electric.png);
 }
 
 .templeate-psychic {
-    background-image: url(./img/templeate-psychic.png)
+    background-image: url(./public/img/templeate-psychic.png)
 }
 
 .templeate-fairy {
-    background-image: url(./img/templeate-fairy.png);
+    background-image: url(./public/img/templeate-fairy.png);
 }
 
 .templeate-steel {
-    background-image: url(./img/templeate-steel.png)
+    background-image: url(./public/img/templeate-steel.png)
 }
 
 .templeate-poison {
-    background-image: url(./img/templeate-poison.png)
+    background-image: url(./public/img/templeate-poison.png)
 }
 
 .templeate-ice {
-    background-image: url(./img/templeate-ice.png);
+    background-image: url(./public/img/templeate-ice.png);
 }
 
 .templeate-dragon {
-    background-image: url(./img/templeate-dragon.png)
+    background-image: url(./public/img/templeate-dragon.png)
 }
 
 .templeate-flying {
-    background-image: url(./img/templeate-flying.png)
+    background-image: url(./public/img/templeate-flying.png)
 }
 
 .templeate-bug {
-    background-image: url(./img/templeate-bug.png)
+    background-image: url(./public/img/templeate-bug.png)
 }
 
 .templeate-flying {
-    background-image: url(./img/templeate-flying.png)
+    background-image: url(./public/img/templeate-flying.png)
 }
 
 .templeate-ground {
-    background-image: url(./img/templeate-ground.png)
+    background-image: url(./public/img/templeate-ground.png)
 }
 
 .templeate-rock {
-    background-image: url(./img/templeate-rock.png)
+    background-image: url(./public/img/templeate-rock.png)
 }
 
 .templeate-ghost {
-    background-image: url(./img/templeate-ghost.png)
+    background-image: url(./public/img/templeate-ghost.png)
 }
 
 /*--BACKGROUND CARD--*/
