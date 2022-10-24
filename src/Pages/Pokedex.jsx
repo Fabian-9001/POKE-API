@@ -43,8 +43,8 @@ const Pokedex = () => {
         <p>Welcome <span>{userName}</span> ,here you can find your favorite pokemon.</p>
       </header>
 
-      <aside className='aside'>
-
+      {/*}
+      <div className='container__pokedex'>
         <div className='pokedex'>
 
           <div className='pokedex__top'>
@@ -55,8 +55,7 @@ const Pokedex = () => {
 
           <div className='pokedex__center'>
             <div className='pokedex__center__square'>
-              <InputsSearch />
-              <SelecByType setTypeSelected={setTypeSelected} setpage={setpage} />
+            <InputsSearch />
             </div>
           </div>
 
@@ -67,7 +66,14 @@ const Pokedex = () => {
           </div>
 
         </div>
+      </div>
+      {*/}
 
+      <aside className='aside'>
+        <InputsSearch />
+        <div className='container__selec'>
+          <SelecByType setTypeSelected={setTypeSelected} setpage={setpage} />
+        </div>
         <div className='container__pagination'>
           <Pagination setpage={setpage} page={page} pagesLength={pokemons && Math.ceil(pokemons.length / pokePerPage)} />
         </div>
@@ -75,17 +81,20 @@ const Pokedex = () => {
 
       <button onClick={() => setDisablePokeball(!disablePokeball)} className='change__pokeball__btn'>{`${disablePokeball ? 'Show Pokeball' : 'Show Cart'}`}</button>
 
-      <main className='container__pokemons'>
+      <main className='main'>
 
-        {
-          pokemons?.slice(initialPoke, finalPoke).map(pokemon => (
-            <CardPoke
-              key={pokemon.url}
-              url={pokemon.url}
-              disablePokeball={disablePokeball}
-            />
-          ))
-        }
+        <div className='container__pokemons'>
+          {
+            pokemons?.slice(initialPoke, finalPoke).map(pokemon => (
+              <CardPoke
+                key={pokemon.url}
+                url={pokemon.url}
+                disablePokeball={disablePokeball}
+              />
+            ))
+          }
+        </div>
+
 
         <div className='pagination__footer'>
           <Pagination setpage={setpage} page={page} pagesLength={pokemons && Math.ceil(pokemons.length / pokePerPage)} />
