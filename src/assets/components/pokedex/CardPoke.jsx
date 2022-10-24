@@ -81,7 +81,8 @@ const CardPoke = ({ url, disablePokeball }) => {
                                                                                 cardPokemon?.types[0].type.name === "ground" ? 'background-ground' :
                                                                                     cardPokemon?.types[0].type.name === "rock" ? 'background-rock' :
                                                                                         cardPokemon?.types[0].type.name === "bug" ? 'background-bug' :
-                                                                                            cardPokemon?.types[0].type.name === "ghost" ? 'background-ghost' : ''
+                                                                                            cardPokemon?.types[0].type.name === "ghost" ? 'background-ghost' :
+                                                                                            cardPokemon?.types[0].type.name === "flying" ? 'background-flying' : ''
                             }
                         `}></div>
                         <img className='card__img' src={cardPokemon?.sprites.other['official-artwork'].front_default} alt={`Imagen del Pokemon:${cardPokemon?.name}`} />

@@ -31,7 +31,7 @@ const PokedexById = () => {
 
   return (
     <section className='container__pokemonId'>
-       
+
       <article className='pokemonId'>
 
         <div className='card__container__pokemonId'>
@@ -84,6 +84,11 @@ const PokedexById = () => {
               <button onClick={() => setModalMoves(false)} className='configure__moves'> Moves</button>
             </div>
 
+            <Link to='/pokedex' >
+              <img className='return__home__btn' src="img/home icon.png" alt="" />
+            </Link>
+
+
             <section className='type__pokemonId'>
               <p className='title__type__pokemonId'>TYPE:</p>
               <ul className='types__pokemonId'>
@@ -124,7 +129,7 @@ const PokedexById = () => {
                     <li className='move__pokemonId'>{move.move.name}</li>
                   ))
                 }
-                  <img onClick={() => setModalMoves(true)} className='exit__btn__pokemonId' src="img/exit icon.png" alt="" />             
+                <img onClick={() => setModalMoves(true)} className='exit__btn__pokemonId' src="img/exit icon.png" alt="" />
               </ul>
 
             </section>
@@ -145,7 +150,7 @@ const PokedexById = () => {
         </div>
 
       </article>
-    
+
     </section>
   )
 }

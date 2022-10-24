@@ -18,13 +18,13 @@ const SelecByType = ({ setTypeSelected, setpage }) => {
     }
 
     return (<div>
-        <select onChange={handleChange}>
+        <select className='select' onChange={handleChange}>
             <option value="All Pokemons">All Pokemons</option>
-            {
-                types?.map(type => (
-                    <option key={type.url} value={type.url}>{type.name}</option>
-                ))
-            }
+                {
+                    types?.map(type => (
+                        <option className='option__pokedex' key={type.url} value={type.url}>{type.name}</option>
+                    ))
+                }   
         </select>
     </div>
 

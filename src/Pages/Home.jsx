@@ -22,7 +22,7 @@ const Home = () => {
       <div className='home'>
         <img className='home__logo' src="img/logo pokemon.png" alt="" />
         <h2 className='home__subtitle'>Hi Trainer!</h2>
-        <p className='home__text'>Give me your to see the pokedex</p>
+        <p className='home__text'>Give me your name to see the pokedex</p>
 
         <FormHome />
 
