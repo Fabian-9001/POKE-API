@@ -46,7 +46,7 @@ const Pokedex = () => {
 
   const minusPokemons = () => {
     pokePerPage > 1 ?
-      pokePerPage = setPokePerPage(pokePerPage - 1)
+      setPokePerPage(pokePerPage - 1)
       : ''
   }
 
