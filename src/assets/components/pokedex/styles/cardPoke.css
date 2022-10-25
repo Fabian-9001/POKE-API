@@ -142,6 +142,7 @@
     background-position: center;
     background-size: 100% 100%;
     margin: auto;
+    cursor: pointer;
 }
 
 .container__pokeball:hover .pokeball__card {
@@ -161,6 +162,7 @@
     font-family: 'Source Sans Pro', sans-serif;
     background-position: center;
     background-size: 100% 100%;
+    cursor: pointer;
 }
 
 .card__header {
@@ -515,6 +517,7 @@
     align-items: center;
     justify-content: center;
     gap: 40px;
+    padding-top: 100px;
 }
 
 .aside input {
@@ -529,6 +532,11 @@
     transition: 0.5s;
     width: 40%;
     margin: 0 3%;
+   
+}
+
+.aside input:focus {
+    box-shadow: 0 0 10px 1px lightcoral;
 }
 
 .aside button {
@@ -555,7 +563,7 @@
     position: absolute;
     z-index: 0;
     border-radius: 0px 0px 0px 0px;
-    top: 30%;
+    top: 35%;
     left: 50%;
     transition: 0.5s;
     transform: translateX(-50%);
@@ -569,7 +577,7 @@
 .change__pokeball__btn:hover {
     border-radius: 10px 0px 10px 0px;
     transition: 0.5s;
-    top: 29%;
+    top: 34%;
 }
 
 

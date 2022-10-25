@@ -62,10 +62,10 @@ const Pokedex = () => {
       <div className={`container__pokedex__configure ${configuration ? '' : 'pokedex__disable'}`}>
         <div className='pokedex__configure'>
 
-          <div className='pokedex__initialPage'>     
+          <div className='pokedex__initialPage'>
             <form className='pokedex__form' onSubmit={handleSubmit}>
               <label className='pokedex__label' htmlFor="pokedexInput">Number of Page</label>
-              <input className='pokedex__input' id='pokedexInput' type="text"  />
+              <input className='pokedex__input' id='pokedexInput' type="text" />
               <button className='pokedex__btn initial__page__btn'>Search</button>
             </form >
           </div>
@@ -86,10 +86,10 @@ const Pokedex = () => {
       </div>
 
 
-      <header>
+      {/*}<header>
         <h1>Pokedex</h1>
         <p>Welcome <span>{userName}</span> ,here you can find your favorite pokemon.</p>
-      </header>
+      </header>{*/}
 
       <aside className='aside'>
         <InputsSearch />
